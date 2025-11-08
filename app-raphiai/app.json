@@ -12,12 +12,18 @@
       "supportsTablet": true
     },
     "android": {
-      "permissions": ["CAMERA"],
+      "permissions": [
+        "CAMERA",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.raphiai.app",
+      "versionCode": 1
     },
     "web": {
       "bundler": "metro",
@@ -40,10 +46,18 @@
         {
           "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera"
         }
-      ]
+      ],
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "EXPO_PUBLIC_API_URL": "https://33b0311e2f96.ngrok-free.app",
+      "router": {},
+      "eas": {
+        "projectId": "bb943a88-edb6-405e-9d15-b80034a9614e"
+      }
     }
   }
 }

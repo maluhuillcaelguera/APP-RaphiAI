@@ -1,10 +1,10 @@
-import React, { useRef, useEffect, useState } from 'react';
-import { View, Alert, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { useIsFocused } from '@react-navigation/native';
 import { CameraView, useCameraPermissions } from 'expo-camera';
 import * as MediaLibrary from 'expo-media-library';
-import { useIsFocused } from '@react-navigation/native';
-import { Ionicons } from '@expo/vector-icons';
 import type { ElementRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function CameraScreen() {
   // 1️⃣ Permisos
@@ -57,7 +57,7 @@ export default function CameraScreen() {
     if (!cameraPerm?.granted) {
       requestCameraPerm();
     }
-  }, []);
+  }, [cameraPerm?.granted, requestCameraPerm]);
   
   // 8️⃣ Si no hay permiso, mostramos botón para pedirlo
   if (!cameraPerm || !cameraPerm.granted) {
