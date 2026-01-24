@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+# 🌿 RaphiAI – Detección de Enfermedades en Hojas de Papa
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**RaphiAI** es una aplicación móvil basada en **Inteligencia Artificial** que permite predecir **enfermedades foliares en hojas de papa** a partir de imágenes, utilizando un modelo de **Deep Learning VGG16**.  
+La aplicación está orientada al **diagnóstico temprano**, apoyando la agricultura de precisión y la investigación académica.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Características principales
 
-   ```bash
-   npm install
-   ```
+- 📸 Captura de imágenes desde la cámara del dispositivo
+- 🤖 Predicción automática de enfermedades en hojas de papa
+- 🧠 Modelo CNN basado en **VGG16**
+- 📊 Clasificación multiclase (incluye hoja sana)
+- 📱 Aplicación móvil desarrollada en **React Native**
+- 🌱 Enfoque en agricultura, innovación y apoyo a agricultores
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🧠 Modelo de Inteligencia Artificial
 
-In the output, you'll find options to open the app in a
+- **Arquitectura:** VGG16  
+- **Tipo:** Red Neuronal Convolucional (CNN)
+- **Pesos:** Inicializados a partir de ImageNet (transfer learning)
+- **Framework:** TensorFlow / Keras
+- **Entrada:** Imágenes RGB redimensionadas
+- **Salida:** Clase de enfermedad predicha
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 📂 Clases del modelo
+- Healthy (Hoja sana)
+- Early Blight
+- Late Blight
+- Leafroll Virus
+- Mosaic Virus
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📱 Tecnologías utilizadas
 
-When you're ready, run:
+### Frontend (App móvil)
+- React Native
+- Expo
+- Expo Camera
+- Expo Router
+
+### Backend / IA
+- Python
+- FastAPI
+- TensorFlow / Keras
+- NumPy
+- OpenCV
+
+---
+
+## ⚙️ Funcionamiento general
+
+1. El usuario captura una imagen de la hoja de papa
+2. La imagen es enviada a la API
+3. El modelo VGG16 procesa la imagen
+4. Se predice la enfermedad correspondiente
+5. El resultado se muestra en la aplicación
+
+---
+
+## 📦 Instalación (Frontend)
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+git clone https://github.com/tu-usuario/raphiAI.git
+cd raphiAI
+npm install
+npx expo start
