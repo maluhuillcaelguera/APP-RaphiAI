@@ -18,7 +18,7 @@ La aplicación está orientada al **diagnóstico temprano**, apoyando la agricul
 
 ## 🧠 Modelo de Inteligencia Artificial
 
-- **Arquitectura:** VGG16  
+- **Arquitectura:** VGG16  Descarga aqui: https://drive.google.com/drive/folders/1w3bnPl25PvUy37wQNNc2etROvPh5mWhe?usp=drive_link  
 - **Tipo:** Red Neuronal Convolucional (CNN)
 - **Pesos:** Inicializados a partir de ImageNet (transfer learning)
 - **Framework:** TensorFlow / Keras
