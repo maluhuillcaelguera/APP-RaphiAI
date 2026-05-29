@@ -11,14 +11,14 @@ La aplicación está orientada al **diagnóstico temprano**, apoyando la agricul
 - 🤖 Predicción automática de enfermedades en hojas de papa
 - 🧠 Modelo CNN basado en **VGG16**
 - 📊 Clasificación multiclase (incluye hoja sana)
-- 📱 Aplicación móvil desarrollada en **React Native**
+- 📱 Aplicación móvil desarrollada en **React Native**  Descarga aqui APP: [RaphiAI](https://drive.google.com/drive/folders/1dm4Lg7DukqJt5SU9E6pcMx9A6efnyP70?usp=sharing)usp=drive_link
 - 🌱 Enfoque en agricultura, innovación y apoyo a agricultores
 
 ---
 
 ## 🧠 Modelo de Inteligencia Artificial
 
-- **Arquitectura:** VGG16  Descarga aqui: https://drive.google.com/drive/folders/1w3bnPl25PvUy37wQNNc2etROvPh5mWhe?usp=drive_link  
+- **Arquitectura:** VGG16  Descarga aqui el modelo: [VGG16](https://drive.google.com/drive/folders/1w3bnPl25PvUy37wQNNc2etROvPh5mWhe?usp=drive_link)usp=drive_link 
 - **Tipo:** Red Neuronal Convolucional (CNN)
 - **Pesos:** Inicializados a partir de ImageNet (transfer learning)
 - **Framework:** TensorFlow / Keras
